@@ -1,12 +1,31 @@
 import papermill as pm
 from pathlib import Path
 
+# Example parameters to inject
+params = {
+    "month": "07",
+    "year": "2026"
+}
+
+for nb in Path('./execute_all_folder').glob('*.ipynb'):
+    print(f"Executing notebook: {nb.name}")
+    pm.execute_notebook(
+        input_path=nb,
+        output_path=nb,  # Overwrites the original notebook with executed results
+        parameters=params
+    )
+print(f"Executed {len(successful_notebooks)} notebooks successfully.")
+
+""" 
+import papermill as pm
+from pathlib import Path
+
 for nb in Path('./test_folder').glob('*.ipynb'):
     pm.execute_notebook(
         input_path=nb,
         output_path=nb  # Path to save executed notebook
     )
-
+ """
 
 
 

@@ -8,3 +8,12 @@ wheels/
 
 # Virtual environments
 .venv
+
+# folders
+ice
+rapports
+test_folder
+
+# output temp files
+output.ipynb
+report_html.html
