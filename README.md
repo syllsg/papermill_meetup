@@ -42,10 +42,17 @@ python papermill_api.py
 ```
 Le script s'éxécute. Il éxécute le notebook en modifant la date et le notebook modifié est sauvegardé sous le nom date_print_2026.ipynb
 
-## Exécuter tous les notebooks présents dans un dossier
+## Exécuter tous les notebooks présents dans un dossier avec un script python
+### Sans modifier de paramètres
 Ici le dossier "execute_all_folder " contient plusieurs notebooks. 
-Il est possible de tous les exécuter en exécutant le script execute_all_notebooks.py
+Il est possible de tous les exécuter en exécutant le script 
+execute_all_notebooks.py. Les notebooks originaux seront écrasés.
 ```bash
 python execute_all_notebooks.py 
 ```
 
+### En modifiant des paramètres et en créant de nouveaux notebooks
+En éxécutant le script suivant, tous les notebooks contenus dans le dossier "execute_all_folder " sont exécutés en injectant des paramètres et le nom des notebooks modifiés est changé et inclus la date d'exécution.
+```bash
+python execute_all_notebooks_params.py
+```
