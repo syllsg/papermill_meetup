@@ -1,15 +1,15 @@
 # Automatisation et paramétrage de notebooks jupyter avec Papermill
-Présentation et démonstration de l'utilisation de papermill lors du meet up Python du 24/06/2025 à Grenoble.<br>
+Présentation et démonstration de l'utilisation de papermill lors du [meetup](https://meetup-python-grenoble.github.io/events/2025-06-24/) Python du 24/06/2025 à Grenoble.<br>
 [Lien](https://docs.google.com/presentation/d/1iX4lNjmOiiK2Q27c5mWHJK-Gyp1cY0Y1s9tZoZ6qVhY/edit?usp=sharing) vers la présentation.<br>
-Dans ce repo, vous trouverez les fichiers nécéssaires pour tester papermill et refaire la démonstration que j'ai réalisée lors de la présentation le 24 juin.
+Dans ce repo, vous trouverez les fichiers nécéssaires pour tester papermill et refaire la démonstration que j'ai réalisée lors de la présentation du 24 juin.
 
-#Installation
-Dépendances : 
-[Python](https://www.python.org/downloads/release/python-3923/) 3.9
-[UV](https://docs.astral.sh/uv/) comme gestionnaire de paquets
-Installez UV, clonez le repo puis installez les dépandances avec : 
+# Installation
+Dépendances : <br>
+[Python](https://www.python.org/downloads/release/python-3923/) 3.9 <br>
+[UV](https://docs.astral.sh/uv/) comme gestionnaire de paquets  <br>
+Installez UV, clonez le repo puis installez les dépandances et activez l'environnement virtuel avec : 
 ```bash
-uv pip install -r pyproject.toml
+uv sync
 ```
 
 # Démonstration
@@ -56,3 +56,7 @@ En éxécutant le script suivant, tous les notebooks contenus dans le dossier "e
 ```bash
 python execute_all_notebooks_params.py
 ```
+<br><br>
+# Conclusion
+J'espère que vous avez pu découvrir et tester la bibliothèque papermill qui peut-être bien utile pour les utilisateurs de notebooks.
+
